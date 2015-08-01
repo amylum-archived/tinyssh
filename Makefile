@@ -5,7 +5,7 @@ BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 
-PACKAGE_VERSION = FIXME
+PACKAGE_VERSION = $$(git --git-dir=.git/modules/upstream describe --tag)
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
@@ -25,7 +25,9 @@ container:
 build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
-	FIXME
+	echo "/usr/bin" > $(BUILD_DIR)/conf-bin
+	CFLAGS=-static CC=musl-gcc make
+	DESTDIR=$(RELEASE_DIR) make install
 	cd $(RELEASE_DIR) && tar -czvf $(RELEASE_FILE) *
 
 version:
