@@ -28,6 +28,8 @@ build: submodule
 	echo "/usr/bin" > $(BUILD_DIR)/conf-bin
 	CFLAGS=-static CC=musl-gcc make -C $(BUILD_DIR)
 	DESTDIR=$(RELEASE_DIR) make -C $(BUILD_DIR) install
+	mkdir -p $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)
+	cp $(BUILD_DIR)/LICENSE $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)/LICENSE
 	cd $(RELEASE_DIR) && tar -czvf $(RELEASE_FILE) *
 
 version:
