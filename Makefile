@@ -26,8 +26,8 @@ build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
 	echo "/usr/bin" > $(BUILD_DIR)/conf-bin
-	CFLAGS=-static CC=musl-gcc make
-	DESTDIR=$(RELEASE_DIR) make install
+	CFLAGS=-static CC=musl-gcc make -C $(BUILD_DIR)
+	DESTDIR=$(RELEASE_DIR) make -C $(BUILD_DIR) install
 	cd $(RELEASE_DIR) && tar -czvf $(RELEASE_FILE) *
 
 version:
