@@ -26,7 +26,7 @@ build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
 	echo "/usr/bin" > $(BUILD_DIR)/conf-bin
-	CFLAGS=-static CC=musl-gcc make -C $(BUILD_DIR)
+	CC=musl-gcc make -C $(BUILD_DIR)
 	DESTDIR=$(RELEASE_DIR) make -C $(BUILD_DIR) install
 	mkdir -p $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)
 	cp $(BUILD_DIR)/LICENCE $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)/LICENSE
