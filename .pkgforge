@@ -3,7 +3,7 @@ org 'amylum'
 
 harden
 
-patch config.patch
+patch 'config.patch'
 
 build do
   make('CFLAGS' => cflags)
