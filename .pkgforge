@@ -1,0 +1,15 @@
+name 'tinyssh'
+org 'amylum'
+
+harden
+
+patch config.patch
+
+build do
+  make('CFLAGS' => cflags)
+  install
+end
+
+test do
+  run 'tinysshd-makekey'
+end
