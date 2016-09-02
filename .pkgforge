@@ -6,7 +6,7 @@ harden
 patch 'config.patch'
 
 build do
-  make('CFLAGS' => cflags)
+  make
   install
 end
 
