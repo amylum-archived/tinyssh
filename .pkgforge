@@ -11,5 +11,5 @@ build do
 end
 
 test do
-  run 'tinysshd-makekey'
+  run 'tinysshd-makekey /tmp/test'
 end
