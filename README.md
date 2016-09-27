@@ -1,7 +1,7 @@
 tinyssh
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/tinyssh.svg)](https://circleci.com/gh/amylum/tinyssh)
+[![Build Status](https://img.shields.io/circleci/project/amylum/tinyssh/master.svg)](https://circleci.com/gh/amylum/tinyssh)
 [![GitHub release](https://img.shields.io/github/release/amylum/tinyssh.svg)](https://github.com/amylum/tinyssh/releases)
 [![CC0 Licensed](http://img.shields.io/badge/license-CC0-green.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
 
