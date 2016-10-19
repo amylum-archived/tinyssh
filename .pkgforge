@@ -1,10 +1,12 @@
 name 'tinyssh'
 org 'amylum'
 
+license 'LICENCE'
+
 harden
 
 patch 'config.patch'
-patch 'test-gid.patch'
+patch 'test-gid-fix.patch'
 
 build do
   make
