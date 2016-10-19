@@ -1,0 +1,13 @@
+diff --git a/tinyssh-tests/dropuidgidtest.c b/tinyssh-tests/dropuidgidtest.c
+index 8d2685b..b97432e 100644
+--- a/tinyssh-tests/dropuidgidtest.c
++++ b/tinyssh-tests/dropuidgidtest.c
+@@ -12,7 +12,7 @@ Public domain.
+ static void droproot(void) {
+ 
+     if (geteuid() == 0) {
+-        if (!dropuidgid(123000, 123000)) _exit(111);
++        if (!dropuidgid(123000, 65535)) _exit(111);
+     }
+     if (geteuid() == 0) _exit(111);
+ }

@@ -4,6 +4,7 @@ org 'amylum'
 harden
 
 patch 'config.patch'
+patch 'test-gid.patch'
 
 build do
   make
