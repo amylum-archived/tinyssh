@@ -1,3 +1,5 @@
+**Inactive Project:** I've stopped updating this package since I'm no longer using it anywhere
+
 tinyssh
 ==========
 
