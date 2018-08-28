@@ -13,5 +13,6 @@ deploy:
   on:
     tags: true
 notifications:
+  email: false
   slack:
     secure: D1CQdk1++Th5lk61kvdoc+hyLChJ6/GqgZeDFG4/+yZcVyloPV+giX08NdKjDNWoJp+snv7y6zKpXbQTSdIqc0itW0xfmICENN4gEUojYe5H3KyeVdKas5ipYXeAddAvQkoGvHsnVV2+wsLGLazpOXF/7bGqeXF54QbesEu4Shh/Q1aJSiEromMjq6STSXBGcN9d6GSliXrQNQFtQ1Oc7DkxqiorkGMHlQpLYn0cpBgU2TaGjGTaJY+LxV30rtbO1Enhr4gzjwbUhd3B6XGJr/EE1ER4G4kTFzBLktnW3rxT/tG78/UDQtl+ZO6OJte23jHJnLBcGXN3iuKa5HNUM6fvNPkHEUQP56PNh82zt36iI/+iWqkqg5MbJ1hxDLnOzpvi+HvKezfGbqoYPRQWYnXnmh3GliNF5YhjKeVPUxf/9ORfVNypG5uniXvOtVjGX6M3V3fQZ4fqpBlaCa54AlpbJRL2n4UZ3oNYdVClDyPwSwvjWgzvxm4fRyJJz4+6QkU/I5VG8ASu/0jCEFdLPZxZWQej9/vg0kaPLllA6ORv8hzPy4XaTetzSyMsJtuC5JmujK1+ddJyd+BymGUw2kT43j0XG2CH/SHCa9+qgQvcng2hwEWXKVZmj2B/+J6E6mNY9A/OM5y8D9kPDja8O5qJ/JFyodiHCcf2x1uO65Y=
